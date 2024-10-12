@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ElemFix
 // @namespace    http://tampermonkey.net/
-// @version      0.0.1
+// @version      0.1.2
 // @description  Скрипт исправляющий и добавляющий некоторое в Element
 // @author       Erinator
 // @match        *://elemsocial.com/*
