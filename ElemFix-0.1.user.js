@@ -76,23 +76,6 @@
         });
     }
 
-    // Функция для добавления блока обновлений ElemFix
-    function addUpdateBlock() {
-        const existingUpdateBlock = document.querySelector('.UI-Block.UI-B_FIRST');
-        if (existingUpdateBlock) {
-            const newUpdateBlock = document.createElement('div');
-            newUpdateBlock.className = 'UI-Block UI-B_TWO';
-            newUpdateBlock.innerHTML = `
-                <div class="UI-Title">ElemFix 0.1</div>
-                <div class="UI-B_CONTENT">
-                    <div>• Фотки на телефоне теперь не огромные.</div>
-                    <div>• Можно скачать музон.</div>
-                </div>
-            `;
-            existingUpdateBlock.parentNode.insertBefore(newUpdateBlock, existingUpdateBlock.nextSibling);
-        }
-    }
-
     // Наблюдатель для динамически добавляемых элементов
     const observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
