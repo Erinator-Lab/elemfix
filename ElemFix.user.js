@@ -8,8 +8,8 @@
 // @grant        GM_download
 // @grant        GM_xmlhttpRequest
 // @icon         https://elemsocial.com/favicon.ico
-// @updateURL      https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix-0.1.user.js
-// @downloadURL    https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix-0.1.user.js
+// @updateURL      https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js
+// @downloadURL    https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js
 // ==/UserScript==
 
 (function() {
