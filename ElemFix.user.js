@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ElemFix
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
+// @version      0.1.3
 // @description  Скрипт исправляющий и добавляющий некоторое в Element
 // @author       Erinator
 // @match        *://elemsocial.com/*
@@ -59,29 +59,28 @@
         }
     }
 
-    // Функция для исправления стилей изображений
+   
     function fixImageZoom() {
         const imageBoxes = document.querySelectorAll('.ImageBox');
 
         imageBoxes.forEach((box) => {
             const img = box.querySelector('img');
 
-            // Устанавливаем новые стили для изображения
             if (img) {
-                img.style.maxWidth = '100%'; // Ограничиваем ширину изображения
-                img.style.height = 'auto';     // Сохраняем пропорции
-                img.style.transform = 'scale(1)'; // Убираем масштабирование
-                img.style.transition = 'none'; // Убираем анимацию при изменении
+                img.style.maxWidth = '100%'; 
+                img.style.height = 'auto';    
+                img.style.transform = 'scale(1)'; 
+                img.style.transition = 'none'; 
             }
         });
     }
 
-    // Наблюдатель для динамически добавляемых элементов
+    
     const observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
             if (mutation.addedNodes.length || mutation.attributeName === 'src') {
                 addDownloadButton();
-                fixImageZoom(); // Исправляем изображения при добавлении кнопки
+                fixImageZoom(); 
             }
         });
     });
@@ -89,8 +88,8 @@
     observer.observe(document.body, { childList: true, subtree: true, attributes: true });
 
     window.addEventListener('load', function() {
-        addDownloadButton(); // Добавляем кнопку при загрузке
-        fixImageZoom();      // Исправляем изображения при загрузке
-        addUpdateBlock();    // Добавляем блок обновлений при загрузке
+        addDownloadButton(); 
+        fixImageZoom();      
+        addUpdateBlock();    
     }, false);
 })();
