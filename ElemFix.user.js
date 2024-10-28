@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name         ElemFix
 // @namespace    http://tampermonkey.net/
-// @version      0.1.4
-// @description  Скрипт исправляющий и добавляющий некоторое в Element
+// @version      0.1.5
+// @description  Скрипт исправляющий и добавляющий некоторое в Element и позволяющий вставлять изображения в посты
 // @author       Erinator
 // @match        *://elemsocial.com/*
 // @grant        GM_download
 // @grant        GM_xmlhttpRequest
-// @icon         https://elemsocial.com/favicon.ico
-// @updateURL      https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js
-// @downloadURL    https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js
+// @icon         https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/icon.png
+// @updateURL    https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js
+// @downloadURL  https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js
 // ==/UserScript==
 
 (function() {
@@ -21,13 +21,10 @@
         const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
 
         if (isAndroid && isFirefox) {
-            // Android Firefox
             window.location.href = url;
         } else if (typeof GM_download === 'function') {
-            // GM_download
             GM_download({ url: url, name: filename });
         } else {
-            // PC Firefox
             const link = document.createElement('a');
             link.href = url;
             link.download = filename;
@@ -59,7 +56,7 @@
         }
     }
 
-   
+    // Функция для исправления зума изображений
     function fixImageZoom() {
         const imageBoxes = document.querySelectorAll('.ImageBox');
 
@@ -67,20 +64,51 @@
             const img = box.querySelector('img');
 
             if (img) {
-                img.style.maxWidth = '100%'; 
-                img.style.height = 'auto';    
-                img.style.transform = 'scale(1)'; 
-                img.style.transition = 'none'; 
+                img.style.maxWidth = '100%';
+                img.style.height = 'auto';
+                img.style.transform = 'scale(1)';
+                img.style.transition = 'none';
             }
         });
     }
 
-    
+   // Обработчик вставки изображений в поле ввода поста
+function waitForElements() {
+    const postInputField = document.querySelector('textarea[placeholder="Текст поста..."]');
+    const fileInput = document.querySelector('#AP-FILE_INPUT');
+
+    if (postInputField && fileInput) {
+        postInputField.addEventListener('paste', (event) => {
+            const items = event.clipboardData.items;
+            const files = Array.from(fileInput.files); // Получаем существующие файлы
+
+            for (let item of items) {
+                if (item.type.startsWith('image')) {
+                    event.preventDefault();
+
+                    const blob = item.getAsFile();
+                    const newFile = new File([blob], 'screenshot.png', { type: blob.type });
+
+                    // Добавление новых файлов к существующим
+                    files.push(newFile);
+                    const dataTransfer = new DataTransfer();
+                    files.forEach(file => dataTransfer.items.add(file)); // Добавляем все файлы в DataTransfer
+                    fileInput.files = dataTransfer.files; // Обновляем файлы в input
+                    fileInput.dispatchEvent(new Event('change', { bubbles: true }));
+                    break; // Выходим из цикла после добавления первого изображения
+                }
+            }
+        });
+    } else {
+        setTimeout(waitForElements, 500);
+    }
+}
+    // Наблюдатель для отслеживания изменений на странице
     const observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
             if (mutation.addedNodes.length || mutation.attributeName === 'src') {
                 addDownloadButton();
-                fixImageZoom(); 
+                fixImageZoom();
             }
         });
     });
@@ -88,8 +116,9 @@
     observer.observe(document.body, { childList: true, subtree: true, attributes: true });
 
     window.addEventListener('load', function() {
-        addDownloadButton(); 
-        fixImageZoom();      
-        addUpdateBlock();    
+        addDownloadButton();
+        fixImageZoom();
+        waitForElements();
     }, false);
+
 })();
