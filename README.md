@@ -1,6 +1,6 @@
 # ElemFix
 Исправляет какие-нибудь баги и добавляет, что-нибудь на сайт elemsocial.com.
-[icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/icon.png)
+![icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/icon.png)
 
 ---
 ## Использование
