@@ -1,3 +1,4 @@
+🇬🇧EN | 🇷🇺RU | 🇺🇦UA | 🇩🇪DE
 # ElemFix
 ![icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/icon.png)
 
@@ -11,5 +12,4 @@
 ## Пока есть
 * Скачивание музыки
 * Фикс фото на мобильной версии
-* Вставка скриншотов с помощью CTRL+V
-
+* Вставка скриншотов в пост с помощью CTRL+V
