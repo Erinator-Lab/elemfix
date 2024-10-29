@@ -1,14 +1,13 @@
+🇬🇧EN | 🇷🇺RU | 🇺🇦UA | 🇩🇪DE
 # ElemFix
 ![icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/icon.png)
-
-Исправляет какие-нибудь баги и добавляет, что-нибудь на сайт elemsocial.com.
-
+Fixes some bugs and adds something to the site elemsocial.com.
+- - -
+## Usage
+1) Download the [Tampermonkey](https://tampermonkey.net /) extension.
+2) [Install Script](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js ).
 ---
-## Использование
-1) Скачайте расширение [Tampermonkey](https://tampermonkey.net/)
-2) [Установить скрипт](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js)
----
-## Пока есть
-* Скачивание музыки
-* Фикс фото на мобильной версии
-* Вставка скриншотов с помощью CTRL+V
+## While there is
+* Download music
+* Fix photos on the mobile version
+* Inserting screenshots into a post using CTRL+V
