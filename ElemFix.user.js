@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         ElemFix
 // @namespace    http://tampermonkey.net/
-// @version      0.1.5
-// @description  Скрипт исправляющий и добавляющий некоторое в Element и позволяющий вставлять изображения в посты
+// @version      0.1.5-b
+// @description  Скрипт исправляющий и добавляющий некоторое в Element
 // @author       Erinator
 // @match        *://elemsocial.com/*
 // @grant        GM_download
