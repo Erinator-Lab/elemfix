@@ -4,7 +4,7 @@
 Fixes some bugs and adds something to the site elemsocial.com.
 - - -
 ## Usage
-1) Download the [Tampermonkey](https://tampermonkey.net /) extension.
+1) Download the [Tampermonkey](https://tampermonkey.net/) extension.
 2) [Install Script](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js ).
 ---
 ## While there is
