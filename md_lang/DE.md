@@ -6,7 +6,7 @@ Behebt einige Fehler und fügt etwas zur Website hinzu elemsocial.com .
 
 ---
 ## Verwendung
-1) Laden Sie die Erweiterung [Tampermonkey](https://tampermonkey.net/)herunter
+1) Laden Sie die Erweiterung [Tampermonkey](https://tampermonkey.net/) herunter
 2) [Skript installieren](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js )
 ---
 ## Solange es ist
