@@ -15,7 +15,7 @@
 (function() {
     'use strict';
 
-    // Функция для скачивания файлов
+    // Функция для скачивания музыки
     function downloadFile(url, filename) {
         const isAndroid = navigator.userAgent.toLowerCase().includes('android');
         const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
