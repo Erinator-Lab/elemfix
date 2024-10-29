@@ -87,7 +87,7 @@ function waitForElements() {
                     event.preventDefault();
 
                     const blob = item.getAsFile();
-                    const newFile = new File([blob], 'screenshot.png', { type: blob.type });
+                    const newFile = new File([blob], 'photo.png', { type: blob.type });
 
                     // Добавление новых файлов к существующим
                     files.push(newFile);
