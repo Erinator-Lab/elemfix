@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ElemFix
 // @namespace    http://tampermonkey.net/
-// @version      0.1.5
+// @version      0.1.6
 // @description  Скрипт исправляющий и добавляющий некоторое в Element
 // @author       Erinator
 // @match        *://elemsocial.com/*
@@ -56,21 +56,87 @@
         }
     }
 
-    // Функция для исправления зума изображений
-    function fixImageZoom() {
-        const imageBoxes = document.querySelectorAll('.ImageBox');
+// Функция для исправления зума изображений и добавления возможности перемещать и масштабировать
+function fixImageZoom() {
+    const imageBoxes = document.querySelectorAll('.ImageBox');
 
-        imageBoxes.forEach((box) => {
-            const img = box.querySelector('img');
+    imageBoxes.forEach((box) => {
+        const img = box.querySelector('img');
 
-            if (img) {
-                img.style.maxWidth = '100%';
-                img.style.height = 'auto';
-                img.style.transform = 'scale(1)';
-                img.style.transition = 'none';
-            }
-        });
-    }
+        if (img) {
+            img.style.maxWidth = '100%';
+            img.style.height = 'auto';
+            img.style.transform = 'scale(1)';
+            img.style.transition = 'none';
+
+            let scale = 1;
+            let initialScale = 1;
+            let initialDist = 0;
+            let startX = 0;
+            let startY = 0;
+            let translateX = 0;
+            let translateY = 0;
+
+            img.addEventListener('touchstart', (event) => {
+                if (event.touches.length === 1) {
+                    startX = event.touches[0].clientX - translateX;
+                    startY = event.touches[0].clientY - translateY;
+                } else if (event.touches.length === 2) {
+                    initialDist = getDistance(event.touches[0], event.touches[1]);
+                    initialScale = scale;
+                    startX = getMiddlePoint(event.touches[0], event.touches[1]).x - translateX;
+                    startY = getMiddlePoint(event.touches[0], event.touches[1]).y - translateY;
+                }
+            });
+
+
+            img.addEventListener('touchmove', (event) => {
+                event.preventDefault();
+
+                if (event.touches.length === 1) {
+
+                    const x = event.touches[0].clientX - startX;
+                    const y = event.touches[0].clientY - startY;
+                    translateX = x;
+                    translateY = y;
+                    img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+                } else if (event.touches.length === 2) {
+
+                    const dist = getDistance(event.touches[0], event.touches[1]);
+                    scale = initialScale * (dist / initialDist);
+
+                    const middlePoint = getMiddlePoint(event.touches[0], event.touches[1]);
+                    translateX = middlePoint.x - startX;
+                    translateY = middlePoint.y - startY;
+
+                    img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+                }
+            });
+
+        
+            img.addEventListener('touchend', () => {
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                img.style.transform = `scale(1)`;
+            });
+        }
+    });
+}
+
+function getDistance(touch1, touch2) {
+    const dx = touch1.clientX - touch2.clientX;
+    const dy = touch1.clientY - touch2.clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+}
+
+function getMiddlePoint(touch1, touch2) {
+    return {
+        x: (touch1.clientX + touch2.clientX) / 2,
+        y: (touch1.clientY + touch2.clientY) / 2,
+    };
+}
+
 
    // Обработчик вставки изображений в поле ввода поста
 function waitForElements() {
