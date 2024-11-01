@@ -6,10 +6,10 @@ Behebt einige Fehler und fügt etwas zur Website hinzu elemsocial.com .
 
 ---
 ## Verwendung
-1) Laden Sie die Erweiterung [Tampermonkey](https://tampermonkey.net/) herunter
+1) Laden Sie die Erweiterung [Tampermonkey](https://tampermonkey.net/) herunter. Suchen Sie für Ihr Telefon nach einem Browser, der Erweiterungen wie Firefox unterstützt.
 2) [Skript installieren](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js )
 ---
 ## Solange es ist
 * Musik herunterladen
-* Fix Foto auf der mobilen Version
+* Fix Foto auf der mobilen Version(sowie Verschieben und Vergrößern/Verkleinern des Bildes)
 * Fügen Sie Screenshots mit STRG+V in einen Beitrag ein
