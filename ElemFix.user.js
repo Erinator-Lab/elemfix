@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ElemFix
 // @namespace    http://tampermonkey.net/
-// @version      0.1.6
+// @version      0.1.6-patch1
 // @description  Скрипт исправляющий и добавляющий некоторое в Element
 // @author       Erinator
 // @match        *://elemsocial.com/*
@@ -62,8 +62,9 @@ function fixImageZoom() {
 
     imageBoxes.forEach((box) => {
         const img = box.querySelector('img');
-
+        
         if (img) {
+            // Устанавливаем начальные стили для изображений
             img.style.maxWidth = '100%';
             img.style.height = 'auto';
             img.style.transform = 'scale(1)';
@@ -76,23 +77,23 @@ function fixImageZoom() {
             let startY = 0;
             let translateX = 0;
             let translateY = 0;
-
             img.addEventListener('touchstart', (event) => {
                 if (event.touches.length === 1) {
+
                     startX = event.touches[0].clientX - translateX;
                     startY = event.touches[0].clientY - translateY;
                 } else if (event.touches.length === 2) {
+
                     initialDist = getDistance(event.touches[0], event.touches[1]);
                     initialScale = scale;
+
                     startX = getMiddlePoint(event.touches[0], event.touches[1]).x - translateX;
                     startY = getMiddlePoint(event.touches[0], event.touches[1]).y - translateY;
                 }
             });
-
-
             img.addEventListener('touchmove', (event) => {
                 event.preventDefault();
-
+                
                 if (event.touches.length === 1) {
 
                     const x = event.touches[0].clientX - startX;
@@ -108,12 +109,10 @@ function fixImageZoom() {
                     const middlePoint = getMiddlePoint(event.touches[0], event.touches[1]);
                     translateX = middlePoint.x - startX;
                     translateY = middlePoint.y - startY;
-
+                    
                     img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
                 }
             });
-
-        
             img.addEventListener('touchend', () => {
                 scale = 1;
                 translateX = 0;
@@ -136,7 +135,6 @@ function getMiddlePoint(touch1, touch2) {
         y: (touch1.clientY + touch2.clientY) / 2,
     };
 }
-
 
    // Обработчик вставки изображений в поле ввода поста
 function waitForElements() {
