@@ -10,5 +10,5 @@ Fixes some bugs and adds something to the site elemsocial.com.
 ---
 ## While there is
 * Download music
-* Fix photos on the mobile version
+* Fix a photo on the mobile version (as well as moving and zooming in/out the image)
 * Inserting screenshots into a post using CTRL+V
