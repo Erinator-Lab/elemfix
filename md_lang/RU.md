@@ -6,7 +6,7 @@
 
 ---
 ## Использование
-1) Скачайте расширение [Tampermonkey](https://tampermonkey.net/). Для телефона найдите браузер поддерживающий расширения, например Firefox.
+1) Скачайте расширение [Tampermonkey](https://tampermonkey.net/). Для телефона найдите браузер поддерживающий расширения, например Firefox или Lemur Browser.
 >**ВНИМАНИЕ**! Если вы скачали расширение из магазина Chrome, то обязательно включите "Режим разработчика" в "Управлении расширениями"
 2) [Установить скрипт](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js)
 ---
