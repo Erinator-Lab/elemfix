@@ -7,6 +7,8 @@
 
 Behebt einige Fehler und fügt etwas zur Website hinzu elemsocial.com .
 
+[![donate](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/md_content/donate.png)](https://github.com/Erinator-Lab/Erinator-Lab?tab=readme-ov-file#%D0%B4%D0%BE%D0%BD%D0%B0%D1%82donate)
+
 ---
 ## Verwendung
 1) Laden Sie die Erweiterung [Tampermonkey](https://tampermonkey.net/) herunter. Suchen Sie für Ihr Telefon nach einem Browser, der Erweiterungen wie Firefox oder Lemur Browser unterstützt
