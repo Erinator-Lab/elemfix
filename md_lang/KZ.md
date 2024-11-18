@@ -1,4 +1,4 @@
-[🇬🇧EN](https://github.com/Erinator-Lab/elemfix/) | 🇷🇺RU | [🇺🇦UA](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/UA.md) | [🇩🇪DE](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/DE.md)
+[🇬🇧EN](https://github.com/Erinator-Lab/elemfix/) | [🇷🇺RU](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/RU.md) | 🇰🇿KZ | [🇺🇦UA](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/UA.md) | [🇩🇪DE](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/DE.md)
 
 # ElemFix
 
