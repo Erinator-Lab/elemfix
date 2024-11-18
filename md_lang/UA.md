@@ -3,7 +3,7 @@
 # Xaromie Не Закривай Element
 
 # ElemFix
-![icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/icon.png)
+![icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/md_content/icon.png)
 
 Виправляє якісь баги і додає, що-небудь на сайт elemsocial.com.
 
