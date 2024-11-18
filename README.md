@@ -6,6 +6,9 @@
 ![icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/md_content/icon.png)
 
 Fixes some bugs and adds something to the site elemsocial.com.
+
+[![donate](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/md_content/donate.png)](https://github.com/Erinator-Lab/Erinator-Lab?tab=readme-ov-file#%D0%B4%D0%BE%D0%BD%D0%B0%D1%82donate)
+
 - - -
 ## Usage
 1) Download the [Tampermonkey](https://tampermonkey.net/) extension. For the phone, find a browser that supports extensions, such as Firefox or Lemur Browser.
