@@ -7,6 +7,8 @@
 
 Исправляет какие-нибудь баги и добавляет, что-нибудь на сайт elemsocial.com.
 
+[![donate](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/md_content/donate.png)](https://github.com/Erinator-Lab/Erinator-Lab?tab=readme-ov-file#%D0%B4%D0%BE%D0%BD%D0%B0%D1%82donate)
+
 ---
 ## Использование
 1) Скачайте расширение [Tampermonkey](https://tampermonkey.net/). Для телефона найдите браузер поддерживающий расширения, например Firefox или Lemur Browser.
