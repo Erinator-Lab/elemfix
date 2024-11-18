@@ -3,7 +3,7 @@
 # Xaromie Don't Close Element
 
 # ElemFix
-![icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/icon.png)
+![icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/md_content/icon.png)
 
 Fixes some bugs and adds something to the site elemsocial.com.
 - - -
