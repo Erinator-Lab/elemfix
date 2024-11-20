@@ -20,4 +20,4 @@ Fixes some bugs and adds something to the site elemsocial.com.
 * Download music
 * Fix a photo on the mobile version (as well as moving and zooming in/out the image)
 * Inserting screenshots into a post using CTRL+V
-* The return of logos in dark and amoled themes (temporarily)
+* The return of logos in dark and amoled themes (disabled)
