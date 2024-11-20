@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         ElemFix
 // @namespace    http://tampermonkey.net/
-// @version      0.1.8
+// @version      0.1.9
 // @description  Скрипт исправляющий и добавляющий некоторое в Element
 // @author       Erinator
 // @match        *://elemsocial.com/*
 // @grant        GM_download
 // @grant        GM_xmlhttpRequest
-// @require        https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/logo/Logo.user.js
 // @icon         https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/icon.png
 // @updateURL    https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js
 // @downloadURL  https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js
