@@ -22,4 +22,4 @@ Behebt einige Fehler und fügt etwas zur Website hinzu elemsocial.com .
 * Musik herunterladen
 * Fix Foto auf der mobilen Version(sowie Verschieben und Vergrößern/Verkleinern des Bildes)
 * Fügen Sie Screenshots mit STRG+V in einen Beitrag ein
-* Wiederkehrende Logos in dunklen und Amoled-Themen(vorübergehend)
+* Wiederkehrende Logos in dunklen und Amoled-Themen(deaktiviert)
