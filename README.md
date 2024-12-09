@@ -13,7 +13,7 @@ Fixes some bugs and adds something to the site elemsocial.com.
 - - -
 ## Usage
 1) Download the [Tampermonkey](https://tampermonkey.net/) extension. For the phone, find a browser that supports extensions, such as Firefox or Lemur Browser.
-> [!ATTENTION!]
+> [!ATTENTION]
 > If you have a Chromium-based browser, then be sure to enable "Developer Mode" in the "Manage Extensions"
 2) [Install Script](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js ).
 ---
