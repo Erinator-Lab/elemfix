@@ -2,23 +2,26 @@
 
 # ElemFix
 
-**#ХаромиНеБросайElement**
+## **#ХаромиНеБросайElement**
 
 ![icon](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/md_content/icon.png)
 
-Исправляет какие-нибудь баги и добавляет, что-нибудь на сайт elemsocial.com.
+Fixes some bugs and adds something to the site elemsocial.com.
 
 [![donate](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/md_content/donate.png)](https://github.com/Erinator-Lab/Erinator-Lab?tab=readme-ov-file#%D0%B4%D0%BE%D0%BD%D0%B0%D1%82donate)
 
----
-## Использование
-1) Скачайте расширение [Tampermonkey](https://tampermonkey.net/). Для телефона найдите браузер поддерживающий расширения, например Firefox или Lemur Browser.
+- - -
+## Usage
+1) Download the [Tampermonkey](https://tampermonkey.net/) extension. For the phone, find a browser that supports extensions, such as Firefox or Lemur Browser.
+
 > [!WARNING]
-> Если у вас браузер на основе Chromium, то обязательно включите "Режим разработчика" в "Управлении расширениями"
-2) [Установить скрипт](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js)
+> If you have a Chromium-based browser, then be sure to enable "Developer Mode" in the "Manage Extensions".
+
+2) [Install Script](https://raw.githubusercontent.com/Erinator-Lab/elemfix/refs/heads/main/ElemFix.user.js ).
 ---
-## Пока есть
-* Скачивание музыки
-* Фикс фото на мобильной версии(а также перемещение и увеличение/уменьшение изображения)
-* Вставка скриншотов в пост с помощью CTRL+V
-* Возращение логотипов в темных и amoled темах(отключено)
+## While there is
+* Download music
+* Fix a photo on the mobile version (as well as moving and zooming in/out the image)
+* Inserting screenshots into a post using CTRL+V
+* The return of logos in dark and amoled themes (disabled)
+
