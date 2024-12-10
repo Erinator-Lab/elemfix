@@ -1,4 +1,4 @@
-[🇬🇧EN](https://github.com/Erinator-Lab/elemfix/) | [🇷🇺RU](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/RU.md) | [🇰🇿KZ](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/KZ.md) | 🇺🇦UA | [🇩🇪DE](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/DE.md)
+[🇬🇧EN](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/EN.md) | [🇷🇺RU](https://github.com/Erinator-Lab/elemfix/) | [🇰🇿KZ](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/KZ.md) | 🇺🇦UA | [🇩🇪DE](https://github.com/Erinator-Lab/elemfix/blob/main/md_lang/DE.md)
 
 # Xaromie Не Закривай Element
 
